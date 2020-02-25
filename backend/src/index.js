@@ -8,7 +8,7 @@ const resolvers = {
 
       return {
         id: "01",
-        name: "Puta q Pariu asdas asdsad"
+        name: "teste"
       };
     }
   }
