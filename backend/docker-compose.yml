@@ -7,6 +7,7 @@ services:
       - "4000:4000"
     environment:
       PRISMA_ENDPOINT: http://prisma:4466
+      JWT_SECRET: ${JWT_SECRET}
     command: yarn dev
     volumes:
       - .:/usr/app
@@ -27,7 +28,7 @@ services:
             user: prisma
             password: prisma
             migrations: true
-
+            rawAccess: true
   postgres:
     image: postgres:10.3
     restart: always
