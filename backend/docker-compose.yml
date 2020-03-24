@@ -8,6 +8,8 @@ services:
     environment:
       PRISMA_ENDPOINT: http://prisma:4466
       JWT_SECRET: ${JWT_SECRET}
+      PRISMA_SERVICES: ${PRISMA_SERVICES}
+      PRISMA_STAGE: ${PRISMA_STAGE}
     command: yarn dev
     volumes:
       - .:/usr/app
